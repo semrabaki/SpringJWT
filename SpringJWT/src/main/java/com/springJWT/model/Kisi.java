@@ -34,6 +34,13 @@ public class Kisi {
     @Email
     private String email;
 
+//    @ManyToMany(fetch= FetchType.LAZY)
+//    @JoinTable(name="kisi_roller", joinColumns=@JoinColumn(name="kisi_id",referencedColumnName ="id"),
+//            inverseJoinColumns = @JoinColumn(name="role_id",referencedColumnName = "id"))
+    //burda hangi colum ile birlesecegini bu sekilde de belirtebiliriz eger belirtmezsek iki tablanunda otomatik olarak id sini alip birlestirior
+    //o sebeple altta yazmadik ama usttekide alttakide dogry
+
+
     @ManyToMany(fetch= FetchType.LAZY)
     @JoinTable(name="kisi_roller", joinColumns=@JoinColumn(name="kisi_id"),
                                    inverseJoinColumns = @JoinColumn(name="role_id"))
