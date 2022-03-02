@@ -15,7 +15,7 @@ public class TestController { //mapping islemleri yapmak icin olusturduk
     }
 
     @GetMapping("/user")
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER','ROLE_MODERATOR')")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER','ROLE_MODERATOR')") //yalnizda kayitli kisiler olmasi icin PreAuthorize annotaition
     public String userAccess(){
         return "yanlizca kaytli kisilere ait icerik";
     }

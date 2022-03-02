@@ -5,12 +5,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-
+//Rollerin oldugu tablo
 @Getter
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name="roller")
+@Table(name="roller") //databasede roller diye gozukcek
 public class KisiRole {
 
     @Id
@@ -22,7 +22,7 @@ public class KisiRole {
 
     public KisiRole(ERoller name){
         this.name=name;
-    }
+    } //parametreli constructor (is otomortik olusturuldugu icin parametre olarak vermedik)
 
 
 }

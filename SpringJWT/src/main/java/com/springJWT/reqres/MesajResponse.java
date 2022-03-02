@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@AllArgsConstructor //yeni bir mesaj olusturcagimiz icin argumanli constructor kullaniyoruz
 public class MesajResponse {
 
     private String mesaj;

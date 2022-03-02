@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Setter
 @Getter
-public class RegisterRequest {
+public class RegisterRequest { //responsebodyden gelen veriyi saklamak icin bir class olusturdm bunu authcontrollerda kullancam
     @NotBlank
     private String username;
     @NotBlank
